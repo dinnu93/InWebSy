@@ -12,7 +12,7 @@ X = ['in','out']
 U = [('login',{'name':'Dinesh','pass':'dinnu93'}), ('logout',{})]
 H = [
         {'nameBox': '<input name="name" placeholder="Name" class="form-control"/>', 'passBox': '<input type="password" placeholder="Password" name="pass" class="form-control"/>', 'loginBox': '<input type="submit" class="btn btn-primary btn-block" value="Log In">'}, 
-        {'helloText': 'Hello', 'name': 'Dinesh', 'logoutBox': '<a href="/logout" class="btn btn-primary btn-block">Log Out</a>'}
+        {'helloText': 'Hello', 'name': 'Dinesh', 'logoutBox': '<a href="/logout" class="btn btn-primary">Log Out</a>'}
     ]
 def F_H(x,u):
 	if x == X[0] and u == U[1]:
@@ -46,7 +46,7 @@ def logout():
 	return redirect(url_for('login'))
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
 
 
 
