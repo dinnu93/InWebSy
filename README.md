@@ -2,8 +2,9 @@
 
 ===============================================================================
 
-##InWebSy is an Interactive Web System which uses Interactive Systems formalism
+InWebSy is an Interactive Web System which uses Interactive Systems formalism
 
+===============================================================================
  Interactive Web System
 
  State Space : X = set([in, out]) x belongsTo X
@@ -19,6 +20,7 @@
  G -> F/H : X * U -> Y 
 
 <code>
+```python
 X = ['in','out']
 U = [('login',{'name':'Dinesh','pass':'dinnu93'}), ('logout',{})]
 H = [
@@ -32,4 +34,6 @@ def F_H(x,u):
 		return (X[0], H[1])
 	else:
 		return 'Some Error Occured'
+
+```
 </code>
