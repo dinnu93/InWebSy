@@ -15,10 +15,10 @@
  State Changer Function : F : X -> X , X' = F(x,u)
 
  Output Function : H : X -> Y , Y' = H(x,u)
- 
+
  G -> F/H : X * U -> Y 
 
-<blockquote>
+<code>
 X = ['in','out']
 U = [('login',{'name':'Dinesh','pass':'dinnu93'}), ('logout',{})]
 H = [
@@ -32,4 +32,4 @@ def F_H(x,u):
 		return (X[0], H[1])
 	else:
 		return 'Some Error Occured'
-</blockquote>
+</code>
