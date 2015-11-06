@@ -19,8 +19,9 @@ InWebSy is an Interactive Web System which uses Interactive Systems formalism
 
  G -> F/H : X * U -> Y 
 
-<code>
+
 ```python
+
 X = ['in','out']
 U = [('login',{'name':'Dinesh','pass':'dinnu93'}), ('logout',{})]
 H = [
@@ -36,4 +37,3 @@ def F_H(x,u):
 		return 'Some Error Occured'
 
 ```
-</code>
