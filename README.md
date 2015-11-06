@@ -1,2 +1,2 @@
 # InWebSy
-InWebSy is an interactive web system which uses Interactive Systems formalism
+InWebSy is an Interactive Web System which uses Interactive Systems formalism
