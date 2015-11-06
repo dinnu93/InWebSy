@@ -2,22 +2,22 @@
 
 ===============================================================================
 
-InWebSy is an Interactive Web System which uses Interactive Systems formalism
+## InWebSy is an Interactive Web System which uses Interactive Systems formalism
 
 ===============================================================================
- Interactive Web System
+### Interactive Web System
 
- State Space : X = set([in, out]) x belongsTo X
+State Space : X = set([in, out]) x belongsTo X
 
- Inputs : U = set([('login',{'name':'Dinesh','pass':'dinnu93'}), ('logout',{'name':'Dinesh'})]) u belongsTo U
+Inputs : U = set([('login',{'name':'Dinesh','pass':'dinnu93'}), ('logout',{'name':'Dinesh'})]) u belongsTo U
 
- Outputs : H = set([{'nameBox': '<input name="name"/>','passBox': '<input type="password" name="pass" />','loginBox':'<input type="submit" value="Log In">'},('HelloText',)])
+Outputs : H = set([{'nameBox': '<input name="name"/>','passBox': '<input type="password" name="pass" />','loginBox':'<input type="submit" value="Log In">'},('HelloText',)])
 
- State Changer Function : F : X -> X , X' = F(x,u)
+State Changer Function : F : X -> X , X' = F(x,u)
 
- Output Function : H : X -> Y , Y' = H(x,u)
+Output Function : H : X -> Y , Y' = H(x,u)
 
- G -> F/H : X * U -> Y 
+G -> F/H : X * U -> Y 
 
 
 ```python
