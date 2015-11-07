@@ -7,17 +7,20 @@
 ===============================================================================
 ### Interactive Web System
 
-State Space : X = set([in, out]) x belongsTo X
+State Space : X = {in, out} && x ∈ X
 
-Inputs : U = set([('login',{'name':'Dinesh','pass':'dinnu93'}), ('logout',{'name':'Dinesh'})]) u belongsTo U
+Inputs : U = { ('login',{'name':'Dinesh','pass':'dinnu93'}), ('logout',{'name':'Dinesh'}) } && u ∈ U
 
-Outputs : H = set([{'nameBox': '<input name="name"/>','passBox': '<input type="password" name="pass" />','loginBox':'<input type="submit" value="Log In">'},('HelloText',)])
+Outputs : H = { <br>
+                 {'nameBox': '<input name="name" placeholder="Name" class="form-control"/>', 'passBox': '<input type="password" placeholder="Password" name="pass" class="form-control"/>', 'loginBox': '<input type="submit" class="btn btn-primary btn-block" value="Log In">'}, <br>
+                {'helloText': 'Hello', 'name': 'Dinesh', 'logoutBox': '<a href="/logout" class="btn btn-primary">Log Out</a>'}<br>
+              }
 
 State Changer Function : F : X -> X , X' = F(x,u)
 
 Output Function : H : X -> Y , Y' = H(x,u)
 
-G -> F/H : X * U -> Y 
+G -> F/H : X * U -> X * Y 
 
 
 ```python
